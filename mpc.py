@@ -247,7 +247,7 @@ class Graph:
                     del (self.PT[v])
                     del (self.IPT[v])
 
-                for w in G.adjset[v]:
+                for w in self.adjset[v]:
                     if degree[w] >= k:
                         degree[w] -= 1
                         if degree[w] < k:
@@ -620,8 +620,8 @@ if __name__ == '__main__':
     # result = G.WPCore(theta, k)
     # result = G.WPCorePlus(theta, k)
     # result = G.SPCore(theta, k)
-    result = G.MPCKC(theta, k)
-    # result = G.MPCSC(theta, k)
+    # result = G.MPCKC(theta, k)
+    result = G.MPCSC(theta, k)
     # result = G.MPCWC(theta, k)
     endtime = datetime.datetime.now()
     interval = (endtime - starttime)

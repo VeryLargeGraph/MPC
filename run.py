@@ -24,7 +24,7 @@ def doit(name, theta, k, method):
     endtime = datetime.datetime.now()
     interval = (endtime - starttime)
     print("All time:" + str(interval))
-    print("New nodes stored in file NEWNODES.json")
+    print('New nodes stored in file "NEWNODES.json" : {new_node_id: [raw_node_id, [starttime, interval]]}')
     print("if theta=4, one node [1, [2003, 1]] means node id 1 is periodic at 2003,2004,2005,2006")
     print("if theta=3, one node [2, [2003, 2]] means node id 2 is periodic at 2003,2005,2007")
     newnode ={}

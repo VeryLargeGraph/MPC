@@ -25,7 +25,7 @@ We focus on mining the temporal network so each edge is associated with a timest
 Note that, the function _readGraph_ in _mpc.py_ can make each snapshot G_i (see Fig 1.c in the paper) to be a simple graph.  
 
 ## Running example
-You can type in dataset name, parameters epsilon, tau, miu and method name to control the program:
+You can type in dataset name, parameters theta, k and method name to control the program:
 
     Dataset name(str): chess_year
     theta(int): 3
